@@ -39,4 +39,3 @@ From the distribution of careers in the two clusters, it can be said that cluste
 The relationship between attitudes towards STEM disciplines and STEM career preferences was assessed using multiple linear regression in R with career cluster score being the dependent/Y variable and discipline attitude scoring the X variable.
 Individual Scatter plot and Regression
 The first step of the analysis was to plot a scatter plot with each of the 4 numeric independent variables against the 2 dependent variables to see if there were any obvious linear trends. It was then followed by running a regression with individual x and y variables. 
-![image](https://github.com/Fatimaperwaiz25/Cluster-Analysis-of-STEM-Careers/assets/86817588/c218af37-6709-4885-9bf6-2f29d7db4058)
