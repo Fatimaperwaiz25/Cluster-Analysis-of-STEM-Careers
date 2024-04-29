@@ -144,7 +144,7 @@ hc1 <- hclust(d, method = "complete" )
 # Plot the obtained dendrogram
 plot(hc1, cex = 0.6, hang = -1, main = 'Cluster Analysis of Careers (Hierarchical)')
 ```
-![title](Images/Rplot1.png)
+![title](images/Rplot1.png)
 
 ``` r
 # Compute with agnes
