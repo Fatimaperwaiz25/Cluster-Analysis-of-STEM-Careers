@@ -12,7 +12,7 @@ Data
 The data for the study was collected from 8 middle schools in Indiana. 270 students took the Student Attitudes Toward STEM (S-STEM) survey to record their responses. In the survey, there were three constructs to measure student attitudes toward the four primary STEM subjects: science (9 items), mathematics (8 items), and engineering/technology (9 items). For each discipline, a five-point Likert scale was utilized -- from strongly disagree to strongly agree to ask students for their responses. There was an additional construct that measured students’ attitudes toward 21st-century skills. Additionally, to address external factors that may affect student interest in STEM, there were questions about whether or not students know adults working in STEM fields.
 
 The S-STEM Survey measures student interest in twelve STEM career pathways: physics, environmental work, biology and zoology, veterinary work, mathematics, medicine, computer science, medical science, chemistry, energy, and engineering. A cluster analysis was run on student responses to these careers, and they were put into two clusters.  
-X Variable: 
+# X Variable: 
 The numeric variables are the attitude scores of students in 
 1.	Math
 2.	Science
@@ -25,15 +25,21 @@ The categorical variables are
 3.	Do you know any adults who work as engineers?
 4.	Do you know any adults who work as mathematicians?
 5.	Do you know any adults who work as technologists?
+
 Each categorical variable has three possible answers.
+
 •	Yes = 1
 •	No = 2
 •	Maybe = 0
-Y Variable:
+
+# Y Variable:
 The two clusters of STEM careers were the Y variables:
+
 ●	Cluster 1: Average scores in physics, math, computer science, chemistry, engineering, energy
+
 ●	Cluster 2: Average scores in biology & zoology, environment work, veterinary work, medicine, medical science. 
-From the distribution of careers in the two clusters, it can be said that cluster 2 is predominated by biological science disciplines, whereas cluster 1 comprises mathematically rigorous disciplines.
+
+From the distribution of careers in the two clusters, it can be said that biological science disciplines predominate cluster 2, whereas cluster 1 comprises mathematically rigorous disciplines.
  
 # Data Analysis
 The relationship between attitudes towards STEM disciplines and STEM career preferences was assessed using multiple linear regression in R with career cluster score being the dependent/Y variable and discipline attitude scoring the X variable.
