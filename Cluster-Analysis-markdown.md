@@ -144,15 +144,14 @@ hc1 <- hclust(d, method = "complete" )
 # Plot the obtained dendrogram
 plot(hc1, cex = 0.6, hang = -1, main = 'Cluster Analysis of Careers (Hierarchical)')
 ```
-![title](images/Rplot1.png)
+![Hierarchical clustering using Complete Linkage](images/Rplot1.png)
 
 ``` r
 # Compute with agnes
 hc2 <- agnes(career_data, method = "complete")
 pltree(hc2, cex = 0.6, hang = -1, main = "Dendrogram of agnes") 
 ```
-
-![](Cluster-Analysis-markdown_files/figure-gfm/unnamed-chunk-3-2.png)<!-- -->
+![Agnes clustering using Complete Linkage](images/Rplot2.png)
 
 ``` r
 # Agglomerative coefficient
@@ -181,8 +180,9 @@ map_dbl(m, ac)
 hc3 <- agnes(career_data, method = "ward")
 pltree(hc3, cex = 0.6, hang = -1, main = "Dendrogram of agnes") 
 ```
+![Agnes clustering using ward Linkage](images/Rplot3.png)
 
-![](Cluster-Analysis-markdown_files/figure-gfm/unnamed-chunk-3-3.png)<!-- -->
+
 
 ``` r
 hc3$ac
@@ -205,8 +205,8 @@ table(sub_grp)
 career_data_mod <- career_data %>% mutate( cluster = sub_grp) 
 fviz_cluster(list(data = career_data, cluster = sub_grp))
 ```
+![Hierarchical clustering using Complete Linkage](images/Rplot4.png)
 
-![](Cluster-Analysis-markdown_files/figure-gfm/unnamed-chunk-3-4.png)<!-- -->
 
 ### **Optimal Number of Clusters**
 
@@ -219,15 +219,13 @@ find that 2 clusters best define our data.
 #silhoutte method
 fviz_nbclust(career_data, kmeans, method = "silhouette")
 ```
-
-![](Cluster-Analysis-markdown_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![Hierarchical clustering using Complete Linkage](images/Rplot5.png)
 
 ``` r
 #elbow method
 fviz_nbclust(career_data, kmeans, method = "wss")
 ```
-
-![](Cluster-Analysis-markdown_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
+![Hierarchical clustering using Complete Linkage](images/Rplot6.png)
 
 ``` r
 # compute gap statistic
@@ -256,8 +254,7 @@ print(gap_stat, method = "firstmax")
 ``` r
 fviz_gap_stat(gap_stat)
 ```
-
-![](Cluster-Analysis-markdown_files/figure-gfm/unnamed-chunk-4-3.png)<!-- -->
+![Hierarchical clustering using Complete Linkage](images/Rplot7.png)
 
 ``` r
 #extra 
@@ -316,7 +313,7 @@ plot(hc5, cex = 0.6)
 rect.hclust(hc5, k = 2, border = 2:5)
 ```
 
-![](Cluster-Analysis-markdown_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![Hierarchical clustering using Complete Linkage](images/Rplot8.png)
 
 ``` r
 # Cut agnes() tree into 2 groups
