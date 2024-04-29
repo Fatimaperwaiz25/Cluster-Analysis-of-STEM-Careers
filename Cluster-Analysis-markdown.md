@@ -146,7 +146,7 @@ plot(hc1, cex = 0.6, hang = -1, main = 'Cluster Analysis of Careers (Hierarchica
 ```![Rplot1](https://github.com/Fatimaperwaiz25/Cluster-Analysis-of-STEM-Careers/assets/86817588/0fdb15a7-a4b7-4a59-ae29-bfc89a4adfb3)
 
 
-![](Cluster-Analysis-markdown_files/Rplot1.png)<!-- -->
+![](Cluster-Analysis-of-STEM-Careers/Rplot1.png)<!-- -->
 
 ``` r
 # Compute with agnes
