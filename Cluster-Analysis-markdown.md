@@ -144,6 +144,20 @@ hc1 <- hclust(d, method = "complete" )
 # Plot the obtained dendrogram
 plot(hc1, cex = 0.6, hang = -1, main = 'Cluster Analysis of Careers (Hierarchical)')
 ```
+1	Physics
+2	Environmental Work
+3	Biology and Zoology
+4	Veterinary Work
+5	Mathematics
+6	Medicine
+7	Computer Science
+8	Medical Science
+9	Chemistry
+10	Energy
+11	Engineering
+
+![image](https://github.com/Fatimaperwaiz25/Cluster-Analysis-of-STEM-Careers/assets/86817588/79089438-d668-4e14-b2e1-5ba7f990dc8a)
+
 ![Hierarchical clustering using Complete Linkage](images/Rplot1.png)
 
 ``` r
