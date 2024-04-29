@@ -125,11 +125,11 @@ head(career_data)
 
 ### **Agglomerative Hierarchical Clustering**
 
-To perform agglomerative hierarchical clustering, first we will
-calculate the dissimilarity matrix using one of the agglomeration method
+To perform agglomerative hierarchical clustering, first, we will
+calculate the dissimilarity matrix using one of the agglomeration methods
 (i.e. “complete”, “average”, “single”, “ward.D”). After which, we will
 plot the dendrograms. If we are interested in finding the Agglomerative
-coefficient, we can use the function agnes. Agglomerative coefficient
+coefficient, we can use the function agnes. The agglomerative coefficient
 tells the amount of clustering found in our structure. Here we are
 implementing all the agglomeration methods to see which one gives the
 best results.
@@ -143,7 +143,8 @@ hc1 <- hclust(d, method = "complete" )
 
 # Plot the obtained dendrogram
 plot(hc1, cex = 0.6, hang = -1, main = 'Cluster Analysis of Careers (Hierarchical)')
-```
+```![Rplot1](https://github.com/Fatimaperwaiz25/Cluster-Analysis-of-STEM-Careers/assets/86817588/0fdb15a7-a4b7-4a59-ae29-bfc89a4adfb3)
+
 
 ![](Cluster-Analysis-markdown_files/Rplot1.png)<!-- -->
 
