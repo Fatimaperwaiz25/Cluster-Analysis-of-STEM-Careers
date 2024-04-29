@@ -103,7 +103,7 @@ library(data.table)
     ## 
     ##     between, first, last
 
-### **Loading and Prepapring Data**
+### **Loading and Preparing Data**
 
 ``` r
 #load data, , row.names=1
@@ -145,7 +145,7 @@ hc1 <- hclust(d, method = "complete" )
 plot(hc1, cex = 0.6, hang = -1, main = 'Cluster Analysis of Careers (Hierarchical)')
 ```
 
-![](Cluster-Analysis-markdown_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](Cluster-Analysis-markdown_files/Rplot1.png)<!-- -->
 
 ``` r
 # Compute with agnes
